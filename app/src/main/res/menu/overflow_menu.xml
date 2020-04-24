@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_offline"
+        android:checkable="true"
+        android:title="Offline"
+        app:actionViewClass="android.widget.CheckBox" />
+
+    <group android:checkableBehavior="single">
+
+
+        <item
+            android:id="@+id/by_cost"
+            android:checkable="true"
+            android:title="Sort by Price"
+            app:actionViewClass="android.widget.RadioButton" />
+        <item
+            android:id="@+id/by_rating"
+            android:checkable="true"
+            android:title="Sort by Ratings"
+
+
+            app:actionViewClass="android.widget.RadioButton" />
+
+    </group>
+
+    <item
+        android:id="@+id/action_search"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="@string/search"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="ifRoom" />
+
+</menu>
